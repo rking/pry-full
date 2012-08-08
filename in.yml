@@ -1,9 +1,3 @@
-= pry-all
-
-Get up and going with a good set of pry tools right away.
-
-== The gems
-
 - pry-debugger
 - pry-stack_explorer
 - pry_exception-explorer
@@ -19,7 +13,3 @@ Get up and going with a good set of pry tools right away.
 - pry-git
 - pry-developer_tools
 - jist
-
-== TODO
-
-Explain how to use these, link to more.
