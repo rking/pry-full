@@ -1,7 +1,7 @@
 - pry-debugger
 - pry-stack_explorer
-- pry_exception-explorer
-- pry-disasm
+- pry-exception_explorer
+# - pry-disasm
 - pry-remote
 - pry-doc
 - pry-theme
