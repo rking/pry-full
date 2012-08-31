@@ -1,6 +1,7 @@
 - pry-debugger
 - pry-stack_explorer
-- pry-exception_explorer
+- pry-rescue
+# - pry-exception_explorer # vs. pry-rescue
 # - pry-disasm
 - pry-remote
 - pry-doc
@@ -12,4 +13,5 @@
 - pry-editline
 - pry-git
 - pry-developer_tools
+- plymouth
 - jist

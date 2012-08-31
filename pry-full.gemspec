@@ -1,7 +1,7 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name          = 'pry-full'
-  s.version       = 0.2
+  s.version       = 0.3
   s.summary       = 'Get going quickly with good set of pry gems'
   s.description   = 'Pry is more of an ecosystem than a gem; this is a jumpstart.'
   s.homepage      = 'https://github.com/rking/pry-full'
