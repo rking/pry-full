@@ -4,6 +4,7 @@ pry-full
 Get up and going with a good set of pry tools right away.
 
 
+
 Dependent Gems
 --------------
 
@@ -11,7 +12,7 @@ Dependent Gems
 
 An essential gem. Turns Pry into a steppable debugger.
   
-- Making the basic "require'pry';binding.pry" from a script come alive.
+- Making the basic &quot;require'pry';binding.pry&quot; from a script come alive.
   
 - In conjunction with plymouth or pry-rescue, to explore failing tests.
   
@@ -46,7 +47,7 @@ Somewhat of a competitor to pry-rescue, but implemented differently. Currently d
   
 - Block wrapper-style trap
   
-- http://vimeo.com/36061298 ← "mini screencast"
+- http://vimeo.com/36061298 ← &quot;mini screencast&quot;
   
 
 ### [pry-remote-em](https://github.com/simulacre/pry-remote-em#readme)
@@ -57,7 +58,7 @@ Starts Pry, listening on a socket, that you can then connect to.
   
 - Cases like with pry-remote but where encryption/auth is needed.
   
-- {"…TODO"=>"fill this list out"}
+- …TODO: fill this list out
   
 
 ### [pry-doc](j)
@@ -102,29 +103,29 @@ Cirwin's wild bag of tricks. The caveat is that it's pretty wild and tricky. Esp
 
 Reformat strings with pretty-printing. Auto-detects JSON/XML/Ruby.
   
-- After a method produces ugly XML, do ">>" by itself to see it prettied.
+- After a method produces ugly XML, do &quot;&gt;&gt;&quot; by itself to see it prettied.
   
-- Pass in the string as an arg, e.g., >> '{"a":1}'
+- Pass in the string as an arg, e.g., &gt;&gt; '{&quot;a&quot;:1}'
   
-- Pass in any Ruby as an arg, >> File.read("/var/www/foo.html")
+- Pass in any Ruby as an arg, &gt;&gt; File.read(&quot;/var/www/foo.html&quot;)
   
 
 ### [pry-buffers](https://github.com/davidbarral/pry-buffers/)
 
 Edit (using your text editor) a buffer, then evaluate it upon exit. Can be a spiffup on the `edit` command, allowing named buffer management (plus, it's shorter to type than `edit`). Note that it does not show the expression value automatically (see https://github.com/davidbarral/pry-buffers/issues/1 )
   
-- buf xyz     ← will edit a buffer named "xyz", and evaluate it.
+- buf xyz     ← will edit a buffer named &quot;xyz&quot;, and evaluate it.
   
-- buf -s xyz  ← show "xyz"
+- buf -s xyz  ← show &quot;xyz&quot;
   
 - buf -l      ← list buffers
   
-- buf -d xyz  ← delete "xyz"
+- buf -d xyz  ← delete &quot;xyz&quot;
   
 
 ### [pry-editline](https://github.com/tpope/pry-editline)
 
-Pop the current line into a text editor. In tpope's words, "Whenever I'm using IRB or Pry, my editor always feels too far away. Yes, there are [ways to] spawn an editor and evaluate the result, but that's not what I need. Usually I'm about 80 characters or so into a hairy one-liner when I think, "you know, I really wish I was in Vim right about now." In Bash, one can load the current command line into an editor with C-x C-e. And now, you can do so in IRB and Pry."
+Pop the current line into a text editor. In tpope's words, &quot;Whenever I'm using IRB or Pry, my editor always feels too far away. Yes, there are [ways to] spawn an editor and evaluate the result, but that's not what I need. Usually I'm about 80 characters or so into a hairy one-liner when I think, &quot;you know, I really wish I was in Vim right about now.&quot; In Bash, one can load the current command line into an editor with C-x C-e. And now, you can do so in IRB and Pry.&quot;
   
 - Ctrl+x, Ctrl+e or Ctrl+o  (if in Emacs mode or Vi Insert Mode)
   
@@ -162,11 +163,11 @@ Capture test failures into Pry sessions. This might get overtaken by the pry-res
 
 An excellent tabcompletion gem. Having this dep enables new Pry stuff. Note that pry v0.9.10 doesn't have this feature, so you must use a repo version.
   
-- require 'x<tab>'
+- require 'x&lt;tab&gt;'
   
-- {asdf: 1, hjkl: 2}[:a<tab>
+- {asdf: 1, hjkl: 2}[:a&lt;tab&gt;
   
-- Monkey.donkey.<tab> # Old pry completion was generic in this case.
+- Monkey.donkey.&lt;tab&gt; # Old pry completion was generic in this case.
   
 
 ### [jist](https://github.com/ConradIrwin/jist#readme)

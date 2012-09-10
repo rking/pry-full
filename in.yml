@@ -44,7 +44,7 @@ pry-remote-em:
   use cases:
     - Debugging odd glitches, like ones that only occur in production.
     - Cases like with pry-remote but where encryption/auth is needed.
-    - …TODO: fill this list out
+    - "…TODO: fill this list out"
   url: https://github.com/simulacre/pry-remote-em#readme
 
 pry-doc:

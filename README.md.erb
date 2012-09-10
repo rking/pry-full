@@ -3,7 +3,13 @@ pry-full
 
 Get up and going with a good set of pry tools right away.
 
-<% list = YAML.load_file 'in.yml' %>
+<%
+  require 'cgi'
+  list = YAML.load_file 'in.yml'
+  def h unclean
+    CGI::escapeHTML unclean
+  end
+%>
 
 Dependent Gems
 --------------
@@ -11,11 +17,11 @@ Dependent Gems
 <% list.each do |name, info| %>
 ### [<%= name %>](<%= info['url'] %>)
 
-<%= info['desc'] %>
+<%=h info['desc'] %>
 
 <% if info['use cases'] %>
   <% info['use cases'].each do |e| %>
-- <%= e %>
+- <%=h e %>
   <% end %>
 <% end %>
 
