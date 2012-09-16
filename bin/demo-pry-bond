@@ -17,7 +17,7 @@ end
 
 def tab_hash
   data = {asdf: 1, bsdf: 2, csdf: 3}
-  1; # ← (Sorry about this noise. It's to give the debugger a breakpoint.)
+  1 # ← (Sorry about this noise. It's to give the debugger a breakpoint.)
   # To see hash-key completion, type:   data[:<Tab><Tab>
   # (then hit ^D to keep going)
 end
@@ -29,7 +29,7 @@ end
 
 def tab_pry_commands
   # Without bond, pry tries to complete symbols for every command context.
-  1;
+  1
   # Try it out:
   #   edit ./<Tab>
   # (Note that not all commands have perfect completion lists. Github Issues
@@ -43,7 +43,7 @@ class Donkey; def eeyaww; 'EEYAWW!' end end
 class Monkey; def donkey; Donkey.new end end
 def tab_chain
   # Try Monkey.new.donkey.<Tab><Tab>
-  1;
+  1
   # Bond actually evaluates the method chain, completing only Donkey methods.
   # (If you try this in the builtin completer, it will complete *all* methods)
 end
@@ -54,7 +54,7 @@ end
 
 def tab_require
   # Oh, so you'd like to `require` with tabcompletion?
-  1;
+  1
   # Try:
   #   require 'u<Tab><Tab>
   # (Don't worry about the .rb at the end, require works fine with it.)
