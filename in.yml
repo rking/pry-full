@@ -105,21 +105,6 @@ pry-highlight:
     # TODO - >> -t javascript "function hi() { return 'bye' }")
   url: https://github.com/ConradIrwin/pry-highlight#readme
 
-pry-buffers:
-  commands: [ buf ]
-  desc: >-
-    Edit (using your text editor) a buffer, then evaluate it upon exit.
-    Can be a spiffup on the `edit` command, allowing named buffer management
-    (plus, it's shorter to type than `edit`). Note that it does not show the
-    expression value automatically (see
-    https://github.com/davidbarral/pry-buffers/issues/1 )
-  use cases:
-    - buf xyz     ← will edit a buffer named "xyz", and evaluate it.
-    - buf -s xyz  ← show "xyz"
-    - buf -l      ← list buffers
-    - buf -d xyz  ← delete "xyz"
-  url: https://github.com/davidbarral/pry-buffers/
-
 pry-editline:
   desc: >-
     Pop the current line into a text editor. In tpope's words, "Whenever I'm
@@ -178,10 +163,12 @@ jist:
     - Check out the `jist -h` output on the CLI, by the way.
   url: https://github.com/ConradIrwin/jist#readme
 
-awesome_print:
+pry-awesome_print:
   desc: >-
     An alternative printing style. A little funky, but more detailed than
     default Pry, especially for complex objects.
   use cases:
-    - "In ~/.pryrc: begin require 'awesome_print'; Pry.print = proc { |output, value| output.puts value.ai }; rescue LoadError; puts 'Consider gem-install awesome_print' end"
+    - Compare the output of the large `_pry_` object with and without this.
+    - Array indices are shown, so you can enter them in the next REPL line.
+    - If you want to see the old output, you can `obj.inspect`
   url: https://github.com/michaeldv/awesome_print#readme
