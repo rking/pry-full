@@ -1,4 +1,3 @@
-#!/bin/sh -e
-pry --no-plugins \
-    -e 'Thread.new { Pry.load_plugins; puts "Done." if ENV["PRYQ_VERBOSE"] };' \
-    "$@"
+#!/usr/bin/env ruby
+loader = 'Thread.new { Pry.load_plugins; puts "Done." if ENV["PRYQ_VERBOSE"] };'
+system *(%W(pry --no-plugins -e #{loader}) + ARGV)
