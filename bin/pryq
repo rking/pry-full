@@ -1,0 +1,4 @@
+#!/bin/sh -e
+pry --no-plugins \
+    -e 'Thread.new { Pry.load_plugins; puts "Done." if ENV["PRYQ_VERBOSE"] };' \
+    "$@"
