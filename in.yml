@@ -55,7 +55,19 @@ pry-doc:
     - '? [].pop'
     - '$ [].pop'
     - …etc.
-  url: j
+  url: https://github.com/banister/pry-doc
+
+pry-docmore:
+  commands: [ 'enhanced ?', 'show-docmores' ]
+  desc: >-
+   show-doc for: $-0 $0 $1 $2 $3 $4 $5 $6 $7 $8 $9 $-a $-d $DEBUG $&
+   $@ $\ $` $! $: $, $$ $. $= $> $< $? $+ $" $; $⁄ $~ $* $' $_ $ -F $FILENAME
+   $-i $-I $KCODE $-K $-l $LOADED_FEATURES $LOAD_PATH $-p $PROGRAM_NAME $SAFE
+   $stderr $stdin $stdout $-v $VERBOSE $-w $-W alia s and begin BEGIN break
+   case class defined? def do else elsif __ENCODING__ end END ensure false
+   __FILE__ for if in __LINE__ module next nil not or redo rescue retry return
+   self super then true undef unless until when while yield'"`
+  url: https://github.com/rking/pry-docmore/wiki
 
 pry-theme:
   commands: [ pry-theme ]
@@ -63,7 +75,7 @@ pry-theme:
   use cases:
     - Being more snazzy
     - Making pry more like your editor, so you can scan more easily.
-  url: ...
+  url: https://github.com/kyrylo/pry-theme
 
 #pry-autopilot:
 #  commands: []
