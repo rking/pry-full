@@ -27,6 +27,7 @@ pry-rescue:
 
 pry-exception_explorer:
   commands: [ enter-exception, continue-exception, exit-exception ]
+  version: '0.1.9'
   desc: >-
     Somewhat of a competitor to pry-rescue, but implemented differently.
     Currently doesn't work on C exceptions (such as `1/0` errors).
