@@ -4,7 +4,7 @@ pry-debugger:
     An essential gem. Turns Pry into a steppable debugger.
   use cases:
     - Making the basic "require'pry';binding.pry" from a script come alive.
-    - In conjunction with plymouth or pry-rescue, to explore failing tests.
+    - In conjunction with pry-rescue, to explore failing tests.
     - Following calls into other libs.
   url: https://github.com/banister/pry-debugger#readme
 
@@ -135,14 +135,6 @@ pry-developer_tools:
     - edit-command show-method
     - edit-command -p show-method
   url: https://github.com/pry/pry-developer_tools
-
-plymouth:
-  desc: >-
-    Capture test failures into Pry sessions. This might get overtaken by the
-    pry-rescue approach.
-  use cases:
-    - Tightening the red/green/refactor loop.
-  url: https://github.com/banister/plymouth#readme
 
 bond:
   desc: >-
