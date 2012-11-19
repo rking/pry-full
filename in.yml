@@ -67,7 +67,7 @@ pry-docmore:
    $stderr $stdin $stdout $-v $VERBOSE $-w $-W alia s and begin BEGIN break
    case class defined? def do else elsif __ENCODING__ end END ensure false
    __FILE__ for if in __LINE__ module next nil not or redo rescue retry return
-   self super then true undef unless until when while yield'"`
+   self super then true undef unless until when while yield
   url: https://github.com/rking/pry-docmore/wiki
 
 pry-theme:
