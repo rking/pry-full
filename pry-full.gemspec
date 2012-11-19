@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   deps = YAML.load_file('in.yml').keys
   s.name          = 'pry-full'
-  s.version       = 0.5
+  s.version       = 0.8
   s.summary       = 'A metagem; Pry + bunch of pry plugins that get the brainstorming going'
   s.description   = deps.join ' + '
   s.homepage      = 'https://github.com/rking/pry-full'
