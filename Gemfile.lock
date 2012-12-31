@@ -48,6 +48,9 @@ GEM
     pry-doc (0.4.4)
       pry (>= 0.9.9.6)
       yard (~> 0.8.1)
+    pry-docmore (0.0.2)
+      pry
+      pry-doc
     pry-editline (1.1.1)
     pry-exception_explorer (0.2.3)
       pry-stack_explorer (>= 0.4.6)
@@ -89,6 +92,7 @@ DEPENDENCIES
   pry-debugger
   pry-developer_tools
   pry-doc
+  pry-docmore
   pry-editline
   pry-exception_explorer
   pry-git
