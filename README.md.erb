@@ -4,10 +4,12 @@ Get up and going with a good set of pry tools right away.
 
 <%
   require 'cgi'
-  list = YAML.load_file 'in.yml'
-  def h unclean
-    CGI::escapeHTML unclean
-  end
+  def h unclean; CGI::escapeHTML unclean end
+  require 'yaml'
+  extras = YAML.load_file 'in.yml'
+  plus_in = '../pry-plus/in.yml'
+  raise 'Must clone rking/pry-plus into ..' unless File.exists? plus_in
+  list = YAML.load_file(plus_in).merge extras
 %>
 
 ## Dependent Gems
@@ -24,13 +26,3 @@ Get up and going with a good set of pry tools right away.
 <% end %>
 
 <% end %>
-
-## Other tips
-
-As an alternative to `bundle open somegem`, there's this cool sequence:
-    gem-cd somegem
-    .zsh
-
-This will drop you into a temporary shell in the install dir of the gem, where
-you can use `ack` and `cat **/* | vim - +setf\ ruby` and other familiar tools
-to explore new codebases.

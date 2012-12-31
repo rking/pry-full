@@ -1,20 +1,16 @@
 # encoding: utf-8
+require './lib/pry-full'
 Gem::Specification.new do |s|
-  deps = YAML.load_file('in.yml')
+  deps = YAML.load_file('in.yml').keys
   s.name          = 'pry-full'
-  s.version       = 1.0
+  s.version       = PryFull::VERSION
+  s.license       = 'CC0'
   s.summary       = 'A metagem; Pry + bunch of pry plugins that get the brainstorming going'
-  s.description   = deps.keys.join ' + '
+  s.description   = deps.join ' + '
   s.homepage      = 'https://github.com/rking/pry-full'
   s.email         = 'rking-pry-full@sharpsaw.org'
   s.authors       = ['☈king', 'Deryl Doucette']
   s.files         = Dir['lib/*']
   s.executables   = Dir['bin/*'].map {|e| e.sub 'bin/', ''}
-  deps.each do |name,body|
-    if ver = body['version']
-      s.add_dependency name, ver
-    else
-      s.add_dependency name
-    end
-  end
+  deps.each{|e| s.add_dependency e}
 end
