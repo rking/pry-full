@@ -1,59 +1,41 @@
-GIT
-  remote: git@github.com:pry/pry
-  revision: a6c4c6950d1430025d84ab480feef95e263baae3
+PATH
+  remote: .
   specs:
-    pry (0.9.10)
-      coderay (~> 1.0.5)
-      method_source (~> 0.8)
-      slop (~> 3.3.1)
+    pry-full (1.1.0)
+      pry-awesome_print
+      pry-developer_tools
+      pry-editline
+      pry-git
+      pry-highlight
+      pry-pretty-numeric
+      pry-syntax-hacks
+      pry-theme
 
 GEM
   remote: http://rubygems.org/
   specs:
     awesome_print (1.1.0)
-    binding_of_caller (0.6.8)
-    bond (0.4.2)
     coderay (1.0.8)
-    columnize (0.3.6)
-    debugger (1.1.4)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.1.1)
-      debugger-ruby_core_source (~> 1.1.3)
-    debugger-linecache (1.1.2)
-      debugger-ruby_core_source (>= 1.1.1)
-    debugger-ruby_core_source (1.1.5)
     diff-lcs (1.1.3)
-    diffy (2.1.0)
-    eventmachine (1.0.0)
+    diffy (2.1.3)
     grit (2.5.0)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
       posix-spawn (~> 0.3.6)
-    highline (1.6.15)
-    interception (0.3)
-    jist (1.2.0)
-      json
-    json (1.7.5)
+    json (1.7.6)
     method_source (0.8.1)
     mime-types (1.19)
-    nokogiri (1.5.5)
+    nokogiri (1.5.6)
     posix-spawn (0.3.6)
+    pry (0.9.11)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.3.1)
     pry-awesome_print (9.6.5)
       awesome_print (~> 1.1.0)
-    pry-debugger (0.2.0)
-      debugger (~> 1.1.3)
-      pry (~> 0.9.9)
     pry-developer_tools (0.1.1)
       pry (>= 0.9.8.pre, < 0.11)
-    pry-doc (0.4.4)
-      pry (>= 0.9.9.6)
-      yard (~> 0.8.1)
-    pry-docmore (0.0.2)
-      pry
-      pry-doc
     pry-editline (1.1.1)
-    pry-exception_explorer (0.2.3)
-      pry-stack_explorer (>= 0.4.6)
     pry-git (0.2.3)
       diffy
       grit
@@ -65,41 +47,14 @@ GEM
       pry
     pry-pretty-numeric (0.1.1)
       pry
-    pry-remote-em (0.7.3)
-      eventmachine
-      highline
-      pry (~> 0.9)
-    pry-rescue (0.13)
-      interception (>= 0.3)
-      pry
-    pry-stack_explorer (0.4.7)
-      binding_of_caller (~> 0.6.8)
     pry-syntax-hacks (0.0.6)
       pry (>= 0.9.8)
     pry-theme (0.1.3)
       json
     slop (3.3.3)
-    yard (0.8.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bond
-  jist
-  pry!
-  pry-awesome_print
-  pry-debugger
-  pry-developer_tools
-  pry-doc
-  pry-docmore
-  pry-editline
-  pry-exception_explorer
-  pry-git
-  pry-highlight
-  pry-pretty-numeric
-  pry-remote-em
-  pry-rescue
-  pry-stack_explorer
-  pry-syntax-hacks
-  pry-theme
+  pry-full!
