@@ -8,16 +8,6 @@ pry-theme:
     - Making pry more like your editor, so you can scan more easily.
   url: https://github.com/kyrylo/pry-theme
 
-pry-awesome_print:
-  desc: >-
-    An alternative printing style. A little funky, but more detailed than
-    default Pry, especially for complex objects.
-  use cases:
-    - Compare the output of the large `_pry_` object with and without this.
-    - Array indices are shown, so you can enter them in the next REPL line.
-    - If you want to see the old output, you can `obj.inspect`
-  url: https://github.com/michaeldv/awesome_print#readme
-
 pry-pretty-numeric:
   desc: >-
     A very simple, but nice, plugin. Turns 12345689 into 12_345_689 on output
