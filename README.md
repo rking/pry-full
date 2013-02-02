@@ -63,23 +63,6 @@ Allows you to navigate the call stack.
 
 
 
-### [pry-exception_explorer](https://github.com/pry/pry-exception_explorer#readme)
-
-Somewhat of a competitor to pry-rescue, but implemented differently. Currently doesn't work on C exceptions (such as `1/0` errors).
-
-
-  
-- Let an exception happen in the REPL, then use enter-exception to find it.
-  
-- Inline-style trap
-  
-- Block wrapper-style trap
-  
-- http://vimeo.com/36061298 ← &quot;mini screencast&quot;
-  
-
-
-
 ### [pry-rescue](https://github.com/ConradIrwin/pry-rescue#readme)
 
 Provides `Pry.rescue do … end` to capture any exceptions and start pry from the context of the source of the exception.
@@ -89,6 +72,8 @@ Provides `Pry.rescue do … end` to capture any exceptions and start pry from th
 - Shortens write-run-debug cycles when exceptions are involved.
   
 - Exploring causes of hard-to-replicate exceptions.
+  
+- `cd-cause` to source of exceptions in code run within Pry
   
 - Rescues on test failure via `require` of `pry-rescue/minitest` and `pry-rescue/rspec`
   
@@ -136,24 +121,9 @@ Alternative syntax highlighting.
 
 
 
-### [pry-awesome_print](https://github.com/michaeldv/awesome_print#readme)
-
-An alternative printing style. A little funky, but more detailed than default Pry, especially for complex objects.
-
-
-  
-- Compare the output of the large `_pry_` object with and without this.
-  
-- Array indices are shown, so you can enter them in the next REPL line.
-  
-- If you want to see the old output, you can `obj.inspect`
-  
-
-
-
 ### [pry-pretty-numeric](https://github.com/genki/pry-pretty-numeric)
 
-A very simple, but nice, plugin. Turns 12345689 into 12_345_689 on output (Which is legal Ruby input). Note that this currently gets hidden with the awesome_print output.
+A very simple, but nice, plugin. Turns 12345689 into 12_345_689 on output (Which is legal Ruby input).
 
 
   
@@ -229,6 +199,17 @@ Mostly for Pry/Pry Plugin development, but can be useful interactively.
 - edit-command show-method
   
 - edit-command -p show-method
+  
+
+
+
+### [awesome_print](TODO)
+
+Not a Pry plugin, but a useful tool, still.
+
+
+  
+- Gnarly objects. ap the_gnarly_obj
   
 
 

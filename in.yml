@@ -12,7 +12,6 @@ pry-pretty-numeric:
   desc: >-
     A very simple, but nice, plugin. Turns 12345689 into 12_345_689 on output
     (Which is legal Ruby input).
-    Note that this currently gets hidden with the awesome_print output.
   use cases:
     - Any time you have big numbers.
   url: https://github.com/genki/pry-pretty-numeric
@@ -79,3 +78,9 @@ pry-developer_tools:
 #    - Automatically 'next' until it finds itself inside program code, (rather than gem/stdlib code)
 #  url: https://github.com/pry/pry-autopilot#readme
 
+awesome_print:
+  commands: [ ap ]
+  desc: Not a Pry plugin, but a useful tool, still.
+  use cases:
+    - Gnarly objects. ap the_gnarly_obj
+  url: TODO
